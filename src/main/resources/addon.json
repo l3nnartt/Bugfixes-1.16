@@ -1,6 +1,10 @@
 {
-  "name": "Example Addon",
   "uuid": "%uuid%",
-  "mainClass": "com.example.addon.ExampleAddon",
-  "transformerClass": "com.example.addon.ExampleAddonTransformer"
+  "name": "Bugfixes",
+  "mainClass": "com.github.l3nnartt.bugfixes.Bugfixes",
+  "description": "Enable all Bugfixes + Markers",
+  "version": 1,
+  "author": "L3nnart_",
+  "category": 1,
+  "icon": "https://dl.lennartloesche.de/bugfixes/logo.png"
 }

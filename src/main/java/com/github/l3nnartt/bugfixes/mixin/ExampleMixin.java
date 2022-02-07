@@ -1,4 +1,4 @@
-package com.example.addon.mixin;
+package com.github.l3nnartt.bugfixes.mixin;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;

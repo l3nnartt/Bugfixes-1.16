@@ -1,4 +1,4 @@
-package com.example.addon;
+package com.github.l3nnartt.bugfixes;
 
 import net.labymod.addon.AddonTransformer;
 import net.labymod.api.TransformerType;
