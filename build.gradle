@@ -94,6 +94,15 @@ dependencies {
 jar {
     // Excludes the start file
     exclude("**/launch")
+    manifest {
+        attributes(
+                'Manifest-Version': '1.0',
+                'Main-Class' : 'com.github.l3nnartt.bugfixes.Main',
+                'Build-Timestamp': new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ").format(new Date()),
+                'Created-By'     : "Gradle ${gradle.gradleVersion}",
+                'Build-Jdk'      : "${System.properties['java.version']} (${System.properties['java.vendor']} ${System.properties['java.vm.version']})"
+        )
+    }
 }
 
 task downloadAPI(type: Download) {
@@ -108,4 +117,3 @@ task downloadAPI(type: Download) {
     src "https://dl.labymod.net/latest/api/files/lm_api_mc1.16.5.jar"
     dest 'libs/'
 }
-
