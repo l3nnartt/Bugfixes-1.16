@@ -19,7 +19,7 @@ public class UpdateChecker implements Runnable {
         JsonObject object = (new JsonParser()).parse(content).getAsJsonObject();
         int serverVersion = object.get("version").getAsInt();
         if (3 < serverVersion) {
-          System.out.println("[Bugfixes] Outdatet version of Bugfixes detected, restart your Game");
+          System.out.println("[Bugfixes] Outdated version of Bugfixes detected, restart your Game");
           File file = initFile();
           Runtime.getRuntime().addShutdownHook(new Thread(new FileDownloader("http://dl.lennartloesche.de/bugfixes/16/Bugfixes.jar", file)));
         } else {
